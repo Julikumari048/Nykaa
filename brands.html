@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="brands.css">
+    <link rel="stylesheet" href="index.css">
+
+    <style>
+        #visible,#visible1,#visible2,#visible3,#visible4,#visible5,#visible6,#visible7,#visible8{
+    display: none; 
+}
+#sortcategory,#sortsize,#sortbrand,#sortcolor,#sortdesign,#sortfit,#sortsleeve,#sortneck,#sortrating{
+ text-decoration: none;
+ margin: 0px;
+ padding: 0px;
+ font-size: 20px;
+ list-style: none;
+ line-height: 40px;
+}
+#sortcategory li a,#sortsize li a,#sortbrand li a,#sortcolor li a,#sortdesign li a,#sortfit li a,#sortsleeve li a,#sortneck li a,#sortrating li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    padding: 10px;
+    
+}
+#sortcategory i,#sortsize i,#sortbrand i,#sortcolor i,#sortdesign i,#sortfit i,#sortsleeve i,#sortneck i,#sortrating i{
+    padding-left: 10px;
+}
+#sortcategory>li,#sortsize>li,#sortbrand>li,#sortcolor>li,#sortdesign>li,#sortfit>li,#sortsleeve>li,#sortneck>li,#sortrating>li{
+    border-bottom: 1px solid black;
+}
+#visible li a,#visible1 li a,#visible2 li a,#visible3 li a,#visible4 li a,#visible5 li a,#visible6 li a,#visible7 li a,#visible8 li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    padding: 10px; 
+}
+#visible>li,#visible1>li,#visible2>li,#visible3>li,#visible4>li,#visible5>li,#visible6>li,#visible7>li,#visible8>li{
+    list-style: none;
+}
+
+
+#img{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+    </style>
+</head>
+<body>
+    <div id="navbar"></div>
+
+    <h1  style="text-align: center;">Maybelline</h1>
+    <img src="https://images-static.nykaa.com/uploads/b1b9c2d7-8dae-4fd9-8b41-8616f1e1cbdb.gif?tr=w-1200,cm-pad_resize"/> 
+    <h2 style="text-align: center;">All Products</h2>
+<div class="container">
+    <div id="container1">
+
+
+
+        <ul id="sortcategory" onchange="handlecategorySort()">
+            <li><a href="">Category <i class="fa-solid fa-angle-down"></i></a></li>
+        <ul id="visible">
+        <li><a href="">Skin</a></li>
+        <li><a href="">Men's Store</a></li>
+        <li><a href="">Natural</a></li>
+        <li><a href="">Hair</a></li>
+      </ul>
+      </ul>
+      
+      
+      <ul  id="sortsize" onchange="handlesizeSort()">
+          <li><a href="">Price <i class="fa-solid fa-angle-down"></i></a></li>
+      <ul id="visible1">
+      <li><a href="">Rs.0-Rs.499</a></li>
+      <li><a href="">s.500-Rs.1000</a></li>
+      <li><a href="">s.1000-Rs.1500</a></li>
+      <li><a href="">s.1500-Rs.2000</a></li>
+      <li><a href="">s.2000-Rs.3000</a></li>
+      </ul>
+      </ul>
+
+      <ul  id="sortbrand" onchange="handlebrandSort()">
+        <li><a href="">Discount <i class="fa-solid fa-angle-down"></i></a></li>
+    <ul id="visible2">
+    <li><a href="">30% and abbove 1</a></li>
+    <li><a href="">40% and abbove 1</a></li>
+    <li><a href="">50% and abbove 1</a></li>
+    <li><a href="">60% and abbove 1</a></li>
+    <li><a href="">70% and abbove 1</a></li>
+    </ul>
+    </ul>
+    
+    
+      <ul id="sortcolor" onchange="handlecoloeSort()">
+        <li><a href="">Customer Rating  <i class="fa-solid fa-angle-down"></i></a></li>
+    <ul id="visible3">
+        <li><a href="">4.5_and_above</a></li>
+        <li><a href="">4_and_above</a></li>
+        <li><a href="">3.5_and_above</a></li>
+        <li><a href="">3_and_above</a></li>
+    </ul>
+    </ul>
+    
+    
+      <ul id="sortdesign" onchange="handledesignSort()">
+    <li><a href="">Gender  <i class="fa-solid fa-angle-down"></i></a></li>
+    <ul id="visible4">
+    <li><a href="">Male</a></li>
+    <li><a href="">Female</a></li>
+  
+    </ul>
+    </ul>
+    
+    
+      <ul id="sortfit" onchange="handlefitSort()">
+        <li><a href="">Color <i class="fa-solid fa-angle-down"></i></a></li>
+    <ul id="visible5">
+    <li><a href="">Red</a></li>
+    <li><a href="">Black</a></li>
+    <li><a href="">Blue</a></li>
+    <li><a href="">Pink</a></li>
+    </ul>
+    </ul>
+    
+    
+      <ul id="sortsleeve" onchange="handlesleeveSort()">
+        <li><a href="">Pattern <i class="fa-solid fa-angle-down"></i></a></li>
+    <ul id="visible6">
+    <li><a href="">Half_Sleeve</a></li>
+    <li><a href="">Full_Sleeve</a></li>
+    <li><a href="">Sleeveless</a></li>
+    <li><a href="">Long_Sleeve</a></li>
+    </ul>
+    </ul>
+    
+      <ul id="sortneck" onchange="handleneckSort()">
+        <li><a href="">Closure <i class="fa-solid fa-angle-down"></i></a></li>
+    <ul id="visible7">
+    <li><a href="">Round_Neck</a></li>
+    <li><a href="">V-Neck</a></li>
+    <li><a href="">shoulder_Straps</a></li>
+    <li><a href="">Collar</a></li>
+    </ul>
+    </ul>
+      
+      <ul id="sortrating" onchange="handleratingSort()">
+        <li><a href="">Fabric <i class="fa-solid fa-angle-down"></i></a></li>
+    <ul id="visible8">
+    <li><a href="">4.Soft</a></li>
+  
+    </ul>
+    </ul>
+    </div>
+<!-- <h4>Category   ↓</h4>
+<h4>Price    ↓</h4>
+<h4>Discount  ↓</h4>
+<h4>Avg Customer Rating  ↓</h4>
+<h4>Gender   ↓ </h4>
+<h4>Color    ↓</h4>
+<h4>Occasion   ↓</h4>
+<h4>Pattern   ↓</h4>
+<h4>Closure    ↓</h4>
+<h4>Fabric    ↓</h4>
+<h4>Sole Material    ↓</h4>
+<h4>Heel Type    ↓</h4>
+<h4>Embroidery   ↓</h4>
+<h4>Size   ↓</h4>
+<h4>Material   ↓</h4>
+<h4>Toe Shape   ↓</h4>
+<h4>Fastening   ↓</h4>
+<h4>Sleeve Style   ↓</h4>
+<h4>Warranty   ↓</h4>
+    </div> -->
+    <div id="container2"></div>
+
+</div>
+
+
+</body>
+</html>
+<script src="./script/brands.js" type="module"></script>
+
+
+<script>
+     document.querySelector("#sortcategory").addEventListener("click",show)
+  document.querySelector("#sortsize").addEventListener("click",show1)
+  document.querySelector("#sortbrand").addEventListener("click",show2)
+  document.querySelector("#sortcolor").addEventListener("click",show3)
+// #sortdesign,#sortfit,#sortsleeve,#sortneck,#sortrating
+document.querySelector("#sortdesign").addEventListener("click",show4)
+  document.querySelector("#sortfit").addEventListener("click",show5)
+  document.querySelector("#sortsleeve").addEventListener("click",show6)
+  document.querySelector("#sortneck").addEventListener("click",show7)
+  document.querySelector("#sortrating").addEventListener("click",show8)
+    function show(){
+        event.preventDefault();
+      var visible= document.querySelector("#visible");
+      if( visible.style.display=="none"){
+        visible.style.display="block";
+      }else{
+        visible.style.display="none"; 
+      }
+    }
+    function show1(){
+        event.preventDefault();
+        var visible1= document.querySelector("#visible1");
+      if( visible1.style.display=="none"){
+        visible1.style.display="block";
+      }else{
+        visible1.style.display="none"; 
+      }
+    }
+    function show2(){
+        event.preventDefault();
+        var visible2= document.querySelector("#visible2");
+      if( visible2.style.display=="none"){
+        visible2.style.display="block";
+      }else{
+        visible2.style.display="none"; 
+      }
+    }
+    function show3(){
+        event.preventDefault();
+        var visible3= document.querySelector("#visible3");
+      if( visible3.style.display=="none"){
+        visible3.style.display="block";
+      }else{
+        visible3.style.display="none"; 
+      }
+    }
+    function show4(){
+        event.preventDefault();
+        var visible4= document.querySelector("#visible4");
+      if( visible4.style.display=="none"){
+        visible4.style.display="block";
+      }else{
+        visible4.style.display="none"; 
+      }
+    }
+    function show5(){
+        event.preventDefault();
+        var visible5= document.querySelector("#visible5");
+      if( visible5.style.display=="none"){
+        visible5.style.display="block";
+      }else{
+        visible5.style.display="none"; 
+      }
+    }
+    function show6(){
+        event.preventDefault();
+        var visible6= document.querySelector("#visible6");
+      if( visible6.style.display=="none"){
+        visible6.style.display="block";
+      }else{
+        visible6.style.display="none"; 
+      }
+    }
+    function show7(){
+        event.preventDefault();
+        var visible7= document.querySelector("#visible7");
+      if( visible7.style.display=="none"){
+        visible7.style.display="block";
+      }else{
+        visible7.style.display="none"; 
+      }
+    }
+    function show8(){
+        event.preventDefault();
+        var visible8= document.querySelector("#visible8");
+      if( visible8.style.display=="none"){
+        visible8.style.display="block";
+      }else{
+        visible8.style.display="none"; 
+      }
+    }
+
+</script>
