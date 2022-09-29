@@ -13,8 +13,6 @@ Tech Stack used :
 * CSS
 * JavaScript
 
-live link:https://steady-treacle-aea23e.netlify.app/index.html
-
 Screenshots :
 Home page:
 
@@ -33,3 +31,4 @@ Q & A Section:
 ![Screenshot (1235)](https://user-images.githubusercontent.com/101566804/192990102-baad6687-b363-47c0-bb5f-a1a763c2b00b.png)
 
 
+live link: https://steady-treacle-aea23e.netlify.app/index.html
